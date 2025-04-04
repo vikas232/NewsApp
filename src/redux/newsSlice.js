@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-// const API_KEY = "046d2e14e65b4d88acbaaa64c353139b"
+const API_KEY = "046d2e14e65b4d88acbaaa64c353139b"
 // const API_KEY = 'c7c0bd7c5da741bea9e6787987dcf172';
 const BASE_URL = 'https://newsapi.org/v2/';
 
