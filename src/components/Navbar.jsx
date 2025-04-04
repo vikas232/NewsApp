@@ -10,7 +10,7 @@ const Navbar = ({ handleSearch }) => {
 
   return (
     <nav className="navbar">
-      <h2>React News Search</h2>
+     <h2 className="navbar-title">React News Search</h2>
       <div>
         <input
           type="text"

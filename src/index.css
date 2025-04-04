@@ -7,44 +7,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
-}
-
-
-
-/* Navbar Styles */
-.navbar {
-  background-color: #0073e6;
-  color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar h2 {
-  margin: 0;
-}
-
-.navbar select,
-.navbar input {
-  padding: 8px;
-  margin: 0 5px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-.search-btn {
-  background-color: #ff6600;
-  color: white;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.search-btn:hover {
-  background-color: #e65c00;
+  background-color: #90918f;
 }
 
 /* News Container */
@@ -143,4 +106,67 @@ body {
   padding: 1rem;
   background-color: #f9f9f9;
   border-radius: 8px;
+}
+
+.navbar {
+  background-color: #797e78;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar h2 {
+  margin-bottom: 1rem;
+}
+
+.navbar > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.navbar input,
+.navbar select,
+.navbar button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 220px; /* 🎯 constant width */
+  box-sizing: border-box;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .navbar > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar input,
+  .navbar select,
+  .navbar button {
+    width: 100%; /* ✅ Full width on small screens */
+    max-width: 300px;
+  }
+}
+
+
+.navbar-title {
+  font-size: clamp(1rem, 4vw, 2rem); /* Scales with viewport width */
+  font-weight: bold;
+  margin: 0;
+  transition: font-size 0.2s ease;
+  width: 30%;
 }
